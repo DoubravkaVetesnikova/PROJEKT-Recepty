@@ -5,6 +5,8 @@ html { box-sizing: border-box; }
 body {
 	margin: 0;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
 }
 
 .paticka {
@@ -33,3 +35,123 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+.recipes {
+	height: 95vh;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1px;
+}
+
+.name {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	flex: 1 1 100%;
+	align-self: flex-end;
+}
+
+.category {
+	flex: 1 1 50%;
+}
+
+.comments {
+	flex: 1 1 50%;
+	text-align: right;
+}
+
+.mainrecipe {
+	background-image: url(images/salat.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 100%;
+}
+
+.mainrecipename {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+	align-self: flex-end;
+}
+
+.recipe {
+	flex: 1 1 100%;
+	padding: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 90px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#recipe1 {
+	background-image: url(images/chlebicek.jpg);
+}
+
+#recipe2 {
+	background-image: url(images/tacos.jpg);
+}
+
+#recipe3 {
+	background-image: url(images/cizrna.jpg);
+}
+
+#recipe4 {
+	background-image: url(images/burger.jpg);
+}
+
+
+@media screen and (min-width: 480px) {
+	
+	.name {
+		font-size: 22px;
+	}
+
+	.mainrecipename {
+		font-size: 36px;
+	}
+
+	.mainrecipe {
+		min-height: 250px;
+		padding: 20px;
+		flex: 1 1 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.recipe {
+		min-height: 150px;
+		padding: 20px;
+		flex: 0 0 calc(50% - 1px);
+	}
+
+}
+
+@media screen and (min-width: 860px) {
+
+	.name {
+		font-size: 28px;
+	}
+
+	.mainrecipe {
+		font-size: 48px;
+	}
+	
+	.mainrecipe {
+		min-height: 400px;
+		display: flex;
+		flex: 0 0 30%;
+	}
+
+	.recipes {
+		flex-wrap: nowrap;
+	}
+
+	.recipe {
+		flex: 0 0;
+	}
+}
