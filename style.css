@@ -108,6 +108,10 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	background-image: url(images/burger.jpg);
 }
 
+.footer {
+	text-align: center;
+	height: 20vh;
+}
 
 @media screen and (min-width: 480px) {
 
@@ -166,4 +170,6 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	.name {
 		font-size: 28px;
 	}
+
 }
+
