@@ -40,6 +40,11 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	display: flex;
 	gap: 1px;
 	flex-direction: column;
+	height: 100vh;
+}
+
+.footer {
+	text-align: center;
 }
 
 .name {
@@ -108,16 +113,8 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	background-image: url(images/burger.jpg);
 }
 
-.footer {
-	text-align: center;
-	height: 20vh;
-}
 
 @media screen and (min-width: 480px) {
-
-	.recipes {
-		height: 95vh;
-	}
 
 	.mainrecipename {
 		font-size: 36px;
