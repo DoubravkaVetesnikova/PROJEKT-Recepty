@@ -7,6 +7,7 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
 	color: #FFFFFF;
+	height: 100%;
 }
 
 .paticka {
@@ -40,7 +41,6 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	display: flex;
 	gap: 1px;
 	flex-direction: column;
-	height: 100vh;
 }
 
 .footer {
